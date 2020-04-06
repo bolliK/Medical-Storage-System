@@ -336,12 +336,18 @@ class Patient:
         if (self.num >= 19) and (self.height <= 84) and self.weight <= 194:
             print("\nUNDERWEIGHT")
 
+        else:
+            print("\nHEALTHY WEIGHT")
+
     def blood_warning(self):
-        if self.sys <= 90 and self.dia <= 60:
+        if (self.sys <= 90) and (self.dia <= 60):
             print("\nLOWBLOODPRESSURE")
 
-        if self.sys >= 120 and self.dia >= 80:
+        if (self.sys >= 120) and (self.dia >= 80):
             print("\nHIGHBLOODPRESSURE")
+
+        else:
+            print("\nNORMAL BLOODPRESSURE")
 
     def type_warning(self):
         if self.type == 'O-':
@@ -371,12 +377,11 @@ class Patient:
     def family_warning(self):
         family_medical = self.issue
         if self.issue is not None:
-            print(f"{family_medical}")
+            print(f"This patient is at risk of the following: {family_medical}")
 
 
-bollinger_kalei = Patient('Kalei', 'Bollinger', '06-05-2001', 115, 65, 'Female', '120', '80', 'O-',
+bollinger_kalei = Patient('Kalei', 'Bollinger', '06-05-2001', 125, 65, 'Female', '120', '80', 'O-',
                           ['Abnormal Aortic Aneurysm', 'Chiari Malformation', 'Crohns Disease'], 18,
-                          ['CRPS', 'Sacroilitis'], ['Bees', 'Tramidol'], None, ['Zoloft', 'Lutera'])
+                          ['CRPS', 'Sacroilitis'], ['Bees', 'Tramidol'], None, ['Xylitol', 'Humara'])
 
-bollinger_kalei.weight_warning()
-bollinger_kalei.type_warning()
+bollinger_kalei.blood_warning()
