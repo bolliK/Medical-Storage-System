@@ -1,2 +1,3 @@
 # Medical Storage System
- This program is to store medical information and tell of the user is, overweight or under weight, what blood types the user can take, and what the user is at rick of medically.
+ This program is to store medical information and tell of the user is, overweight or under weight, what blood types the user can take, and what the user is at rick of medically. This will be run through Django. The target audience would be people who are concerned with their health. This program was originally intended for medical professionals to store their patients info and then a patient can view their information. Similar to a "My Chart" app used in hospitals today. I am new to coding and that goal was very unrealistic for me to achieve. 
+When this program is finished, a user will be able to input baaic health information such as weight, age, and blood type. The program will return information about the users health information. 
